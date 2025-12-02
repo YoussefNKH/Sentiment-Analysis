@@ -107,15 +107,15 @@ Test cases cover:
 ```
 sentiment-analysis/
 ├── app/
-│   ├── main.py                  # Application entry point
-│   ├── api/routes.py            # REST API route definitions
+│   ├── main.py                 # Application entry point
+│   ├── api/endpoints.py        # REST API route definitions
 │   ├── database/mongodb.py     # MongoDB connection handling
 │   ├── nlp/
 │   │   ├── sentiment_analysis.py
 │   │   ├── text_processing.py
 │   │   └── topic_detection.py
-│   ├── scraper/twitter_scraper.py
-│   └── core/config.py
+│   ├── core/config.py
+│   └── scraper/twitter_scraper.py
 └── tests/
     └── test_text_processor.py
 ```
