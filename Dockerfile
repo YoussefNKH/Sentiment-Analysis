@@ -11,7 +11,7 @@ COPY requirements.txt .
 
 # Install PyTorch with compatible version for Python 3.11
 RUN pip install --upgrade pip && \
-    pip install torch==2.1.0+cpu torchvision==0.16.0+cpu torchaudio==2.1.0 -f https://download.pytorch.org/whl/torch_stable.html
+    pip install torch==2.2.0+cpu torchvision==0.17.0+cpu torchaudio==2.2.0 -f https://download.pytorch.org/whl/torch_stable.html
 
 # Install other requirements
 RUN pip install --no-cache-dir -r requirements.txt
