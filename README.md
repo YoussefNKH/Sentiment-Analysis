@@ -22,6 +22,24 @@ This project focuses on analyzing depression-related content on Twitter to ident
 * Asynchronous background processing using FastAPI
 
 ---
+## Project Structure
+
+```
+sentiment-analysis/
+├── app/
+│   ├── main.py                 # Application entry point
+│   ├── api/endpoints.py        # REST API route definitions
+│   ├── database/mongodb.py     # MongoDB connection handling
+│   ├── nlp/
+│   │   ├── sentiment_analysis.py
+│   │   ├── text_processing.py
+│   │   └── topic_detection.py
+│   ├── core/config.py
+│   └── scraper/twitter_scraper.py
+└── tests/
+    └── test_text_processing.py
+```
+---
 
 ## Installation and Setup
 
@@ -99,23 +117,3 @@ Test cases cover:
 * Text normalization
 * Stopword removal
 * Edge cases in preprocessing logic
-
----
-
-## Project Structure
-
-```
-sentiment-analysis/
-├── app/
-│   ├── main.py                 # Application entry point
-│   ├── api/endpoints.py        # REST API route definitions
-│   ├── database/mongodb.py     # MongoDB connection handling
-│   ├── nlp/
-│   │   ├── sentiment_analysis.py
-│   │   ├── text_processing.py
-│   │   └── topic_detection.py
-│   ├── core/config.py
-│   └── scraper/twitter_scraper.py
-└── tests/
-    └── test_text_processing.py
-```
