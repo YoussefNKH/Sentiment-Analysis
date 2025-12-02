@@ -117,5 +117,5 @@ sentiment-analysis/
 │   ├── core/config.py
 │   └── scraper/twitter_scraper.py
 └── tests/
-    └── test_text_processor.py
+    └── test_text_processing.py
 ```
