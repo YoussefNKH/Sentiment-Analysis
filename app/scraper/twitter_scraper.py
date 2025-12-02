@@ -92,7 +92,7 @@ def get_cached_tweets(query, limit, cache_time):
     return scrape_twitter_internal(query, limit)
 
 
-def scrape_twitter(query="depression", limit=15, use_cache=True):
+def scrape_twitter(query, limit, use_cache):
     """
     Twitter scraping with rate limit handling, pagination and caching
     """

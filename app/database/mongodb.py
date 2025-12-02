@@ -40,11 +40,3 @@ async def get_posts(limit=100):
     for post in posts:
         post["_id"] = str(post["_id"])
     return posts
-async def close_db():
-    """Close the database connection"""
-    global client
-    if client:
-        client.close()
-        print("MongoDB connection closed.")
-
-    
